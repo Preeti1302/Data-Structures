@@ -1,3 +1,5 @@
+package ArraysAndString;
+
 import java.util.Arrays;
 
 public class Removeduplicates {
