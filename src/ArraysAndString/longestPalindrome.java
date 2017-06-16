@@ -14,7 +14,7 @@ public class longestPalindrome {
 			sb.append(str.charAt(i));
 		}
 		if(str.equals(sb.toString())){
-			System.out.println(sb.toString());
+			//System.out.println(sb.toString());
 			return true;
 		}
 		else {
@@ -31,7 +31,7 @@ public class longestPalindrome {
 		
 		int maxLength = 0;
 		for(String st : arrString){
-			System.out.println(is.isPalindromee(st));
+			//System.out.println(is.isPalindromee(st));
 			if(is.isPalindromee(st)){				//isPalindrome(st)){
 				hmap.put(st, st.length());
 				maxLength = Math.max(maxLength, st.length());
