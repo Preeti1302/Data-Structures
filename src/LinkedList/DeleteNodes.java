@@ -59,7 +59,28 @@ public class DeleteNodes {
 		previous.next = temp.next;
 	}
 
-
+	public void findFromLast(int n){
+		
+		Node temp = head;
+		int len =0;
+		
+		while(temp != null){
+			temp = temp.next;
+			len ++;
+		}
+		System.out.println(len);
+		if(len < n){
+			System.out.println("LinkedList is small");
+		}
+		/* RESET TEMP TO HEAD*/
+		temp = head;
+		for(int i = 1 ; i < len-n +1 ; i++){
+			temp = temp.next;
+		}
+		
+		System.out.println(temp.data);
+		
+	}
 
 	public static void main(String[] args){
 		DeleteNodes allStuff = new DeleteNodes();
@@ -81,5 +102,8 @@ public class DeleteNodes {
 		allStuff.deleteNode(70);
 		System.out.println("*****After deleting 70*****");
 		allStuff.printList();
+		int k = 3;
+		System.out.println("Find kth element");
+		allStuff.findFromLast(k);
 	}
 }
