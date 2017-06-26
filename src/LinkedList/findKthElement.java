@@ -8,6 +8,9 @@ public class findKthElement {
 		System.out.println(list.get(findIndex));
 	}
 		
+	
+	
+	
 	public static void main(String[] args){
 
 		LinkedList<Integer> list = new LinkedList<Integer>();

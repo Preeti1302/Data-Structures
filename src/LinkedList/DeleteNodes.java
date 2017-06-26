@@ -81,6 +81,29 @@ public class DeleteNodes {
 		System.out.println(temp.data);
 		
 	}
+	
+public int findElementNode(int value){
+		
+		Node temp = head;
+		int length = 0;
+		while(temp !=null){
+			temp = temp.next;
+			length++;
+		}
+		
+		temp=head;
+		for(int i=1 ; i <= length ; i++){
+			
+			if(temp.data == value){
+				return i;
+			}		
+			else{
+				temp = temp.next;
+			}
+		}
+		return 0;
+	}
+	
 
 	public static void main(String[] args){
 		DeleteNodes allStuff = new DeleteNodes();
@@ -105,5 +128,13 @@ public class DeleteNodes {
 		int k = 3;
 		System.out.println("Find kth element");
 		allStuff.findFromLast(k);
+		
+		int index = allStuff.findElementNode(90);
+		if(index == 0){
+			System.out.println("Element not in list");
+		}
+		else
+			System.out.println("Element found at Index :" +index);
+		
 	}
 }
