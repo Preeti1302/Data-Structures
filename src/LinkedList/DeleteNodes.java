@@ -1,5 +1,5 @@
 package LinkedList;
-
+/*DELETE COMPLETE LINKED LIST BY SUBSTITUTING HEAD TO nULL*/
 public class DeleteNodes {
 
 	static class Node{
@@ -39,6 +39,9 @@ public class DeleteNodes {
 		}		
 	}
 
+	public void deleteList(){
+		head  = null;
+	}
 	public void deleteNode(int n){
 
 		//Node deleteNode = new Node(n);
@@ -117,6 +120,7 @@ public int findElementNode(int value){
 		System.out.println("*****After deleting 40*****");
 		allStuff.printList();
 		System.out.println("*****Push some *****");
+	//	allStuff.deleteList();
 		allStuff.push(60);
 		allStuff.push(70);
 		allStuff.push(80);
