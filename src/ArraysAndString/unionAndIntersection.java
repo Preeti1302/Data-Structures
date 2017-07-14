@@ -40,36 +40,6 @@ public class unionAndIntersection {
 		
 			System.out.println("Union of these 2 arrays is : " + hset1);
 		
-//		
-//		HashMap<Integer , Integer> hmap = new HashMap<Integer , Integer> ();
-//		for(int i : arr1){
-//
-//			if(hmap.containsKey(i)){
-//				hmap.put(i, hmap.get(i)+1);
-//			}
-//			else{
-//				hmap.put(i, 1);
-//			}
-//		}
-//
-//		for(int j : arr2){
-//
-//			if(hmap.containsKey(j)){
-//				hmap.put(j, hmap.get(j)+1);
-//			}
-//			else{
-//				hmap.put(j, 1);
-//			}
-//		}
-//
-//		for(int k : hmap.keySet()){
-//			if(hmap.get(k)>1){
-//				System.out.println("Intersection of these 2 arrays is : " + k);
-//			}
-//		}
-	}
-
-
 
 	public static void main(String[] args){
 //		int arr1[] = {7, 1, 5, 2, 3, 6};

@@ -6,9 +6,7 @@ import java.util.Scanner;
 public class addDigitsNumbers {
 
 	public static void addDigits(int number){
-		//int remainder = 0 ;
 		ArrayList<Integer> remainder = new ArrayList<Integer>();
-		//int remainder =0; int sum = 0;
 		while(number!=0){
 
 			//remainder = number%10;
